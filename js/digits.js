@@ -14,9 +14,6 @@ var for_play=[];
 for(var j=0;j<rounds;j++){
     for_play.push(j);
 }
-//for_play.splice(2,1);
-
-
 
 
 $(document).ready(function() {
@@ -27,16 +24,15 @@ $(document).ready(function() {
 var audio_play;
 
 function incarca(){
-   
-   // alert(for_play);
+   if(audio_play!=null){
+    audio_play.pause();
+   }
     r=Math.floor(Math.random() * for_play.length);
     random=for_play[r];
-   // alert(random);
     random_nr_obj=Math.floor(Math.random() * 8);
 
     
     audio_play = new Audio(sounds[random]) ;
-    //audio_play = new Audio("audio/yey.mp3") ;
 
     audio_play.onended = function() {
         document.getElementById("divstop").style.display="none";
@@ -72,8 +68,6 @@ function incarca(){
 }
 
 function verify(id){
- 
-    //alert(id==random_nr_obj);
     if(id==random_nr_obj){
         var audio = new Audio("audio/yey.mp3") ;
         audio.play();
@@ -93,10 +87,8 @@ function verify(id){
         }
     }
     else{
-        //alert("JOC TERMINAT");
         document.getElementById("confetti").style.display="block";
         document.getElementById("button_next").onclick=function(){};
-        //location.href = 'index.html';
     }
 }
 
