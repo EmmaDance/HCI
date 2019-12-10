@@ -3,3 +3,31 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+html,body {
+height: 100%;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+#play{
+    margin:auto;
+    width:15%;
+}
+
+#play:hover{
+    cursor: pointer;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
