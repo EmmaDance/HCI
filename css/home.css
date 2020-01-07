@@ -1,0 +1,33 @@
+html {
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html,body {
+height: 100%;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+main img{
+    margin: auto;
+    width: 10%;
+}
+
+main img:hover{
+    cursor: pointer;
+}
+
+/*#play{*/
+    /*margin:auto;*/
+    /*width:15%;*/
+/*}*/
+
+/*#play:hover{*/
+    /*cursor: pointer;*/
+/*}*/

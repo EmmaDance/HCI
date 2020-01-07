@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     let count = 0;
     const all = 5;
     let playing = false;
@@ -49,11 +50,11 @@ $(document).ready(function() {
     });
 
     function finished(){
-        let finished = new Audio("sound/finished.mp3");
+        let finished = new Audio("sound/f.mp3");
         finished.play();
-        alert("You completed the game");
+        // alert("You completed the game");
         // go to the next page
-        location.href = 'index.html';
+        location.href = 'home.html';
     }
 
 });
