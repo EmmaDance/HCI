@@ -51,10 +51,11 @@ $(document).ready(function() {
 
     function finished(){
         let finished = new Audio("sound/f.mp3");
+        finished.addEventListener("ended", function(){
+            window.location.href = "home.html";
+
+        });
         finished.play();
-        // alert("You completed the game");
-        // go to the next page
-        location.href = 'home.html';
     }
 
 });
