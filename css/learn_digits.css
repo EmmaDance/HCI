@@ -1,0 +1,101 @@
+html {
+    background-image: url("../images/blue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.elefant{
+    width: 200px;
+    display: none;
+}
+
+#play{
+    max-width: 100px;
+    position: fixed;
+    top: 20%;
+    cursor: pointer;
+}
+
+#play:hover{
+    max-width: 150px;
+}
+
+#panza{
+    position: absolute;
+    z-index: 1;
+    width: 750px;
+}
+
+.cifra{
+    /* position: fixed;
+    top: 100px; */
+    max-width: 300px;
+    /* cursor: pointer; */
+    
+}
+
+.imagine{
+    position: fixed;
+    top: 50%;
+    max-width: 300px;
+}
+
+.learn:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.numar{
+    float: left;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.divpanza{
+    /* margin-left: 200px; */
+    float: left;
+    width: 50%;
+}
+
+.exit{
+    float: left;
+    width: 20%;
+    display: none;
+}
+
+#elefanti{
+    margin-left: 70px;
+    margin-top: 150px;
+}
+
+#elefanti{
+    position: relative;
+    z-index: 2;
+}
+
+
+.button_exit{
+    position: fixed;
+    width: 100px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+
+.button_exit:hover{
+    width: 150px;
+}
+
+#confetti{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */ 
+}

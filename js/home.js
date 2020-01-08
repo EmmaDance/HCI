@@ -12,4 +12,20 @@ $(document).ready(function() {
             intro.play();
         }
     });
+
+    $('#digits').click(function() {
+        let intro = new Audio("sound/intro_cifre.m4a");
+        intro.addEventListener("ended", function(){
+            playing=false;
+            window.location.href = "learn_digits.html";
+
+        });
+        if (!playing) {
+            playing = true;
+            intro.play();
+        }
+    });
+
+
 });
+
