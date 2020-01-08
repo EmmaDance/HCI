@@ -21,14 +21,18 @@ html {
     padding: 1em;
 }
 
-#image-container .square {
-    width: 10%;
+#image-container .wide {
+    width: 18%;
 }
 
-#image-container .wide {
-    width: 20%;
+#image-container .square {
+    width: 9%;
 }
 
 #image-container .thin {
     width: 5%;
+}
+
+#intro{
+    visibility: hidden;
 }

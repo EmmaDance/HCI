@@ -1,9 +1,9 @@
 
 var cifre=["images/1.png","images/2.png","images/3.png","images/4.png","images/5.png","images/6.png","images/7.png","images/8.png","images/9.png"];
 var imagini=["images/creanga.png","images/lebada.png","images/inel.png","images/scaun.jpg","images/secera.png","images/melc.png","images/coasa.png","images/covrig.png","images/dus.jpg"];
-var poezii=["audio/Bat.mp3","audio/Lebada.mp3","audio/Inel.mp3","audio/Scaun.mp3","audio/Secera.mp3","audio/Melc.mp3","audio/Coasa.mp3","audio/Colac.mp3","audio/Dus.mp3"];
-var audio_cifre=["audio/Unu_merged.mp3","audio/Doi_merged.mp3","audio/Trei_merged.mp3","audio/Patru_merged.mp3","audio/Cinci_merged.mp3","audio/Sase_merged.mp3","audio/Sapte_merged.mp3","audio/Opt_merged.mp3","audio/Noua_merged.mp3"];
-var audio_nr=["audio/1elefant.mp3","audio/2elefanti.mp3","audio/3elefanti.mp3","audio/4elefanti.mp3","audio/5elefanti.mp3","audio/6elefanti.mp3","audio/7elefanti.mp3","audio/8elefanti.mp3","audio/9elefanti.mp3"];
+var poezii=["audio/Bat.m4a","audio/Lebada.m4a","audio/Inel.m4a","audio/Scaun.m4a","audio/Secera.m4a","audio/Melc.m4a","audio/Coasa.m4a","audio/Colac.m4a","audio/Dus.m4a"];
+var audio_cifre=["audio/Unumerged.mp3","audio/Doimerged.m4a","audio/Treimerged.m4a","audio/Patrumerged.m4a","audio/Cincimerged.m4a","audio/Sasemerged.m4a","audio/Saptemerged.m4a","audio/Optmerged.m4a","audio/Nouamerged.m4a"];
+var audio_nr=["audio/1elefant.m4a","audio/2elefanti.m4a","audio/3elefanti.m4a","audio/4elefanti.m4a","audio/5elefanti.m4a","audio/6elefanti.m4a","audio/7elefanti.m4a","audio/8elefanti.m4a","audio/9elefanti.m4a"];
 
 
 var audio_cifra_1=new Audio(audio_cifre[0]);
@@ -55,8 +55,21 @@ function incarca(cifra){
     
     }
     else {
-        var bravo=new Audio("audio/Bravo.mp3");
+        var bravo=new Audio("audio/Bravo.m4a");
         bravo.play();
+        bravo.onended=function(){
+           var audio_game=new Audio("audio/intro_game_cifre.m4a");
+           audio_game.play();
+           audio_game.onended=function(){
+            var audio_apasa_play = new Audio("audio/apasa_play.m4a");
+            audio_apasa_play.play();
+            audio_apasa_play.onended=function(){
+                go_to_game();
+            }
+            
+           }
+           
+        }
         document.getElementById("confetti").style.display="block";
     }
 }
@@ -80,7 +93,7 @@ function afisareElefanti(cifra){
 }
 
 
-function home(){
-    location.href='index.html';
+function go_to_game(){
+    location.href='digits.html';
 }
 
