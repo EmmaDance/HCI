@@ -31,5 +31,10 @@ $(document).ready(function() {
     $('#syllable-dot').click(function() {
         window.location.href = "syllables.html";
     });
+    
+    $('#sentences').click(function() {
+        window.location.href = "sentences.html";
+    });
+
 });
 

@@ -9,50 +9,49 @@ var urlGhiozdan = 'AudioInvatare/Ghiozdan.mp3';
 var urlPenar = 'AudioInvatare/Penar.mp3';
 var urlRadiera = 'AudioInvatare/Radiera.mp3';
 var urlStilou = 'AudioInvatare/Stilou.mp3';
-var start = '<img src="ImaginiInvatare/start.png"  onclick="startTeaching(this)">';
-var multime='<img id="multime" src="ImaginiInvatare/multime.jpg"">';
-var next='<img src="ImaginiInvatare/next.png" onclick="nextPage()">';
+var start = '<img src="ImaginiInvatare/start.png"  alt="Start"  onclick="startTeaching(this)">';
+var multime='<img id="multime"  alt="Rechizite" src="ImaginiInvatare/multime.jpg"">';
+var next='<img src="ImaginiInvatare/next.png"  alt="urmatoareaPagina" onclick="nextPage()">';
 
 var ghiozdane = [
-    '<img src="ImaginiInvatare/Ghiozdan1.png">',
-    '<img src="ImaginiInvatare/Ghiozdan2.png">',
-    '<img src="ImaginiInvatare/Ghiozdan3.jpg">'
+    '<img src="ImaginiInvatare/Ghiozdan1.png" alt="Ghiozdan">',
+    '<img src="ImaginiInvatare/Ghiozdan2.png" alt="Ghiozdan">',
+    '<img src="ImaginiInvatare/Ghiozdan3.jpg" alt="Ghiozdan">'
 ];
 var ascutitori = [
-    '<img src="ImaginiInvatare/Ascutitoare2.png">',
-    '<img src="ImaginiInvatare/Ascutitoare3.png">'
+    '<img src="ImaginiInvatare/Ascutitoare2.png" alt="Ascutitoare">',
+    '<img src="ImaginiInvatare/Ascutitoare3.png" alt="Ascutitoare">'
 ];
 var caiete = [
-    '<img src="ImaginiInvatare/Caiet2.jpg">',
-    '<img src="ImaginiInvatare/Caiet3.png">'
+    '<img src="ImaginiInvatare/Caiet2.jpg" alt="Caiet">',
+    '<img src="ImaginiInvatare/Caiet3.png" alt="Caiet">'
 ];
 var carioci = [
-    '<img src="ImaginiInvatare/Carioci1.png">',
-    '<img src="ImaginiInvatare/Carioci3.png">'
+    '<img src="ImaginiInvatare/Carioci1.png" alt="Carioci">',
+    '<img src="ImaginiInvatare/Carioci3.png" alt="Carioci">'
 ];
 var creioaneC = [
-    '<img src="ImaginiInvatare/Creioane2.jpg">',
-    '<img src="ImaginiInvatare/Creioane3.png">'
+    '<img src="ImaginiInvatare/Creioane2.jpg" alt="Creioane colorate">',
+    '<img src="ImaginiInvatare/Creioane3.png" alt="Creioane colorate">'
 ];
 var creioane = [
-    '<img src="ImaginiInvatare/Creion1.png">',
-    '<img src="ImaginiInvatare/Creion2.png">',
-    '<img src="ImaginiInvatare/Creion3.png">',
-    '<img src="ImaginiInvatare/Creion4.png">'
+    '<img src="ImaginiInvatare/Creion1.png" alt="Creion">',
+    '<img src="ImaginiInvatare/Creion2.png" alt="Creion">',
+    '<img src="ImaginiInvatare/Creion3.png" alt="Creion">',
+    '<img src="ImaginiInvatare/Creion4.png" alt="Creion">'
 ];
 var penare = [
-    '<img src="ImaginiInvatare/Penar2.jpg">',
-    '<img src="ImaginiInvatare/Penar3.png">',
-    '<img src="ImaginiInvatare/Penar4.png">'
+    '<img src="ImaginiInvatare/Penar2.jpg" alt="Penar">',
+    '<img src="ImaginiInvatare/Penar3.png" alt="Penar">',
+    '<img src="ImaginiInvatare/Penar4.png" alt="Penar">'
 ];
 var radiere = [
-    '<img src="ImaginiInvatare/Radiera1.gif">',
-    '<img src="ImaginiInvatare/Radiera2.png">'
+    '<img src="ImaginiInvatare/Radiera1.gif" alt="Radiera">',
+    '<img src="ImaginiInvatare/Radiera2.png" alt="Radiera">'
 ];
 var stilouri = [
-    '<img src="ImaginiInvatare/Stilou1.png">',
-    '<img src="ImaginiInvatare/Stilou2.png">',
-    '<img src="ImaginiInvatare/Stilou3.png">'
+    '<img src="ImaginiInvatare/Stilou1.png" alt="Stilou">',
+   // '<img src="ImaginiInvatare/Stilou2.png" alt="Stilou">',
 ];
 
 
@@ -138,7 +137,6 @@ function startTeaching(startImage) {
                                                                                     if(audioFinal.ended==false){
                                                                                         setTimeout(function(){
                                                                                             window.location.href='jocRechizite.html';
-                                                                                            //document.getElementById("image").innerHTML = next;
                                                                                         }, 7000);
                                                                                     }
                                                                                 }, 6000);
