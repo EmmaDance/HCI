@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+    var stea = '<img id="steaId" src="images/stea.png" alt="Stea">';
+    var totalStele = 0;
     let count = 0;
     const all = 5;
     let playing = false;
@@ -25,6 +26,11 @@ $(document).ready(function() {
             playing=false;
             $(event.target).css("opacity", 0.2).css("pointer-events", "none");
             count++;
+            var stars = [];
+            for (let i = 0; i < count; i++) {
+                stars[i] = stea;
+            }
+            document.getElementById("stele").innerHTML = stars.join("");
             if (count===all)
                 finished();
         });
