@@ -1,0 +1,23 @@
+.button_exit{
+    position: fixed;
+    width: 100px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+
+.button_next{
+    position: fixed;
+    width: 100px;
+    cursor: pointer;
+    right: 0;
+    top: 200px;
+}
+
+.button_exit:hover{
+    width: 150px;
+}
+
+.button_next:hover{
+    width: 150px;
+}
