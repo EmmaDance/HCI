@@ -92,6 +92,9 @@ function afisareElefanti(cifra){
     
 }
 
+function home(){
+    location.href='home.html';
+}
 
 function go_to_game(){
     location.href='digits.html';
