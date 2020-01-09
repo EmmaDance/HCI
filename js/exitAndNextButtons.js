@@ -11,3 +11,8 @@ function goToSounds(){
     location.href="letter_s.html";
 }
 
+function goToSentences(){
+    location.href="sentences.html";
+}
+
+

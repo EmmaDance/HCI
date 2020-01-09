@@ -21,3 +21,15 @@
 .button_next:hover{
     width: 150px;
 }
+
+.button_back:hover{
+    width: 150px;
+}
+
+.button_back{
+    position: fixed;
+    width: 100px;
+    cursor: pointer;
+    right: 0;
+    top: 400px;
+}
