@@ -18,14 +18,18 @@ $(document).ready(function() {
         intro.addEventListener("ended", function(){
             playing=false;
             window.location.href = "learn_digits.html";
-
         });
         if (!playing) {
             playing = true;
             intro.play();
         }
     });
+    $('#ghiozdanInitial').click(function() {
+        window.location.href = "invatareRechizite.html";
+    });
 
-
+    $('#syllable-dot').click(function() {
+        window.location.href = "syllables.html";
+    });
 });
 

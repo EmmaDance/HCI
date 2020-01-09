@@ -11,18 +11,28 @@ height: 100%;
 main{
     height: 100%;
     display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
     justify-content: center;
     vertical-align: center;
 }
 main img{
-    margin: auto;
-    width: 10%;
+    /* margin: auto; */
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 35%;
+    margin-bottom: 35%;
+    width: 15%;
 }
 
 main img:hover{
     cursor: pointer;
 }
 
+#syllable-dot{
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
 /*#play{*/
     /*margin:auto;*/
     /*width:15%;*/
