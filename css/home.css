@@ -31,7 +31,7 @@ main img{
     /*margin-top: 0%;*/
     /*margin-bottom: 10%;*/
     width: 20%;
-    padding: 5%;
+    padding: 10%;
     padding-top: 0;
 }
 
@@ -46,9 +46,18 @@ main img:hover{
     width: 30%;
 }
 
-#ghiozdanInitial{
+#digits{
+    width:20%;
+    margin-top: 0;
+}
+
+#backPack{
+    margin-top: -5%;
     width:30%;
 
+}
+#schoolImage{
+    width: 30%;
 }
 
 /*#play{*/
