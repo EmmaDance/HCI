@@ -11,7 +11,7 @@ var stea = '<img id="steaId" src="ImagesJoc/stea.png" alt="Stea">';
 var totalStele = 0;
 function initializeItems() {
     start = '<img id="start" onclick="playAudio()" src="ImagesJoc/start.png" alt="Start">';
-    next = '<img id="next" onclick="nextPage()" src="ImagesJoc/next.png" alt="Next">';
+    next = '<img id="next" onclick="nextPage()" src="images/wrong.png" alt="Next">';
     var1 = '<img id="Gh" src="ImagesJoc/Ghiozdan1.png" alt="Ghiozdan1">;';
     var2 = '<img id="Gh" src="ImagesJoc/Ghiozdan2.png" alt="Ghiozdan2">';
     var3 = '<img id="Gh" src="ImagesJoc/Ghiozdan3.jpg" alt="Ghiozdan3">';
@@ -94,11 +94,7 @@ function setOpacity(image) {
     image.style.opacity = "0.3";
 }
 function nextPage() {
-    if (count == 8) {
-        //go to next page
         window.location.href='home.html';
-        //location.reload();
-    }
 }
 function showItems() {
     initializeItems();

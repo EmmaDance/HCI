@@ -162,5 +162,8 @@ function startTeaching(startImage) {
 }
 
 function nextPage(){
-
+    window.location.href='jocRechizite.html';
+}
+function homePage(){
+    window.location.href='home.html';
 }
