@@ -4,25 +4,35 @@ html {
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1300px) {
+    html {
+        background-image: url("../images/home.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
 html,body {
 height: 100%;
 }
 
 main{
-    height: 100%;
+    height: auto;
     display: flex;
     margin-left: 20%;
     margin-right: 20%;
-    justify-content: center;
-    vertical-align: center;
+    margin-top: 10%;
+    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+    vertical-align: top;
 }
 main img{
-    /* margin: auto; */
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-top: 35%;
-    margin-bottom: 35%;
-    width: 15%;
+     margin: auto;
+    /*margin-top: 0%;*/
+    /*margin-bottom: 10%;*/
+    width: 20%;
+    padding: 5%;
+    padding-top: 0;
 }
 
 main img:hover{
@@ -30,9 +40,17 @@ main img:hover{
 }
 
 #syllable-dot{
-    margin-top: 30%;
-    margin-bottom: 30%;
+    /*margin-top: 30%;*/
+    /*margin-bottom: 30%;*/
+    padding-left: 0;
+    width: 30%;
 }
+
+#ghiozdanInitial{
+    width:30%;
+
+}
+
 /*#play{*/
     /*margin:auto;*/
     /*width:15%;*/

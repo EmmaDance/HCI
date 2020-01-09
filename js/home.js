@@ -4,7 +4,8 @@ $(document).ready(function() {
         let intro = new Audio("sound/intro.mp3");
         intro.addEventListener("ended", function(){
             playing=false;
-            window.location.href = "letter_s.html";
+            window.open("letter_s.html");
+            // window.location.href = "letter_s.html";
 
         });
         if (!playing) {
@@ -17,7 +18,8 @@ $(document).ready(function() {
         let intro = new Audio("sound/intro_cifre.m4a");
         intro.addEventListener("ended", function(){
             playing=false;
-            window.location.href = "learn_digits.html";
+            window.open("learn_digits.html");
+            // window.location.href = "learn_digits.html";
         });
         if (!playing) {
             playing = true;
@@ -25,15 +27,18 @@ $(document).ready(function() {
         }
     });
     $('#ghiozdanInitial').click(function() {
-        window.location.href = "invatareRechizite.html";
+        window.open("invatareRechizite.html");
+        // window.location.href = "invatareRechizite.html";
     });
 
     $('#syllable-dot').click(function() {
-        window.location.href = "syllables.html";
+        window.open("syllables.html");
+        // window.location.href = "syllables.html";
     });
     
     $('#sentences').click(function() {
-        window.location.href = "sentences.html";
+        window.open("sentences.html");
+        // window.location.href = "sentences.html";
     });
 
 });

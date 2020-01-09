@@ -9,7 +9,8 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 #image-container img:hover{
@@ -18,7 +19,8 @@ html {
 
 #image-container img{
     margin: auto;
-    padding: 1em;
+    padding: 2em;
+    padding-bottom: 0;
 }
 
 #image-container .wide {
