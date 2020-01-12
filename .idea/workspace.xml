@@ -210,7 +210,7 @@
       <workItem from="1578585873259" duration="356000" />
       <workItem from="1578592824416" duration="886000" />
       <workItem from="1578652517386" duration="10000" />
-      <workItem from="1578853087869" duration="1046000" />
+      <workItem from="1578853087869" duration="1223000" />
     </task>
     <task id="LOCAL-00001" summary="New game - leter s">
       <created>1574889012575</created>
@@ -223,7 +223,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6429000" />
+    <option name="totallyTimeSpent" value="6606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />

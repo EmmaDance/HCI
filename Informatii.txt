@@ -1,0 +1,15 @@
+Echipa Stelute 
+2019-2020
+Tema - Scoala
+
+Instructiuni:
+
+Se intra in joc deschizand fisierul home.html.
+
+Se poate crea o scurtatura la fisierul home.html care sa fie mutata pe Desktop sau oriunde in calculator. Nu scoateti fisierele originale din acest folder!
+
+Se recomanda foloirea browser-ului Google Chrome.
+
+Distractie placuta!
+
+
