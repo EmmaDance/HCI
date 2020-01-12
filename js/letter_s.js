@@ -16,6 +16,12 @@ $(document).ready(function() {
         }
     }
 
+    $('#intro').click(function(event) {
+        let intro = new Audio("sound/sunetul_s.mp3");
+        intro.play();
+        $(event.target).css("visibility", "hidden").css("pointer-events", "none");
+    });
+
     $('.correct').click(function(event) {
         let successes = {0:'sound/success0.mp3', 1:"sound/success1.mp3", 2:"sound/success2.mp3"};
         const rand = Math.floor((Math.random() * 3));

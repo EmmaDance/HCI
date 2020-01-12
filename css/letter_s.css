@@ -36,7 +36,15 @@ html {
 }
 
 #intro{
-    visibility: hidden;
+    position: fixed;
+    width: 8em;
+    cursor: pointer;
+    left: 1em;
+    top: 35%;
+ }
+
+#intro :hover{
+    cursor: pointer;
 }
 
 #stele{
